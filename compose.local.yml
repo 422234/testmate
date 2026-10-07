@@ -1,0 +1,15 @@
+services:
+
+  proxy:
+    restart: unless-stopped
+    ports:
+      - "80:80"
+
+  db:
+    restart: unless-stopped
+
+  adminer:
+    restart: unless-stopped
+
+  backend:
+    restart: unless-stopped
